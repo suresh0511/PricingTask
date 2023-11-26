@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="companyName">
+            <h5>Company name</h5>
+        </div>
+        <div class="nav">
+            <a href="#">Features</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Support</a>
+            <a href="#">Pricing</a>
+            <button class="button">Sign up</button>
+        </div>
+    </div>
+    <div class="form" id="form">
+        <span class="close" id="close">&times;</span>
+        <form action="">
+            <p>Name</p>
+            <input type="text" class="inputbox" id="name" required>
+            <p>Email</p>
+            <input type="email" class="inputbox" id="email" required>
+            <p>Order Comments</p>
+            <textarea name="" id="comments" cols="30" rows="5" class="inputbox" required></textarea>
+            <div>
+            <button class="button submitbtn" onclick="createItem()">Submit</button></div>
+        </form>
+    </div>
+    <div class="content">
+        <h1>Pricing</h1>
+        <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+    <div class="slider">
+        <h3 class="heading">Select the number of users: <span id="value">0</span> </h3>
+        <input type="range" min="0" max="30" value="0" class="range" id="myrange">
+    </div>
+    <div class="container" id="container">
+        <div class="cardlist" id="cardlist">
+
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="column1 col-all">
+                    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" class="image" alt="" width='24' height='24'>
+                    <small>© 2017-2018</small>
+                </div>
+                <div class="column2 col-all">
+                    <h5>Features</h5>
+                    <ul class="list">
+                        <li><a href="#" class="text-listed">Cool stuff</a></li>
+                        <li><a href="#" class="text-listed">Random feature</a></li>
+                        <li><a href="#" class="text-listed">Team feature</a></li>
+                        <li><a href="#" class="text-listed">Stuff for developers</a></li>
+                        <li><a href="#" class="text-listed">Another one</a></li>
+                        <li><a href="#" class="text-listed">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="column3 col-all">
+                    <h5>Resources</h5>
+                    <ul class="list">
+                        <li><a href="#" class="text-listed">Resource</a></li>
+                        <li><a href="#" class="text-listed">Resource name</a></li>
+                        <li><a href="#" class="text-listed">Another resource</a></li>
+                        <li><a href="#" class="text-listed">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="column4 col-all">
+                    <h5>About</h5>
+                    <ul class="list">
+                        <li><a href="#" class="text-listed">Team</a></li>
+                        <li><a href="#" class="text-listed">Locations</a></li>
+                        <li><a href="#" class="text-listed">Privacy</a></li>
+                        <li><a href="#" class="text-listed">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
